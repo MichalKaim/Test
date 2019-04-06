@@ -2,4 +2,5 @@ xyz
 edit1
 BranchEdit
 edit2
+branch2Conflict
 masterConflict
