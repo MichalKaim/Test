@@ -5,3 +5,4 @@ edit2
 branch2Conflict
 masterConflict
 Resolved
+Witam XD
