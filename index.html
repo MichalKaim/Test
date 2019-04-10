@@ -5,21 +5,33 @@
         <meta charset="utf-8">
         <title>Masna Strona</title>
     </head>
-    <body>
+    <body style="background-color: black; color: darkgreen;">
         
-                <script>
+        <div id="dick"></div>
+        
+        <script>
 
                     function Matrix(){
 
                         x = Math.floor(Math.random() * 100);
-                        document.write(String.fromCharCode(97 + x) + ' ');
+                        var para = document.createElement("a");
+                        var node = document.createTextNode(String.fromCharCode(97 + x) + ' ');
+                        para.appendChild(node);
+                        
+                        var element = document.getElementById("dick");
+                        element.appendChild(para);
 
 
                     }
 
-                    var myVar = setInterval(Matrix, 10);
                     
                 </script>
+        
+        <a onclick="this.style.color = 'black';
+                    setInterval(Matrix, 5);"
+                    >START</a>
+        
+        <p id="text"></p>
         
     </body>
 </html>
